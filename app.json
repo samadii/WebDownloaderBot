@@ -1,0 +1,22 @@
+{
+  "name": "WebDLbot",
+  "env": {
+    "API_ID": {
+      "description": "Add your telegram API_ID",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Add your telegram API_HASH",
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+}
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}

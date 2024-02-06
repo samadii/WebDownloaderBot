@@ -59,7 +59,7 @@ async def webdl(_, m):
     obj = urlDownloader(imgFlg=True, linkFlg=True, scriptFlg=True)
     res = obj.savePage(url, dir)
     if not res:
-        return await msg.edit('something went wrong!')
+        return await msg.edit_text('something went wrong!')
 
     shutil.make_archive(name, 'zip', base_dir=dir)
     await m.reply_document(name+'.zip')
